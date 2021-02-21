@@ -1,0 +1,20 @@
+{
+  "name": "Proxit",
+  "description": "Quick and dirty web proxy.",
+  "repository": "https://github.com/dmpayton/proxit",
+  "keywords": [],
+  "env": {
+    "PROXY_URL": {
+      "description": "The URL to proxy.",
+      "value": "http://some.domain.com/"
+    },
+    "SECRET_KEY": {
+      "description": "Used for Django's `SECRET_KEY` setting.",
+      "generator": "secret",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
