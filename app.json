@@ -4,16 +4,24 @@
   "repository": "https://github.com/dmpayton/proxit",
   "keywords": [],
   "env": {
+    "ALLOWED_HOSTS": {
+      "description": "Allowed domains",
+      "value": "your-app.herokuapp.com,www.yourdomain.com"
+    },
     "DISABLE_COLLECTSTATIC": {
       "description": "Don't run collectstatic on build.",
       "value": "1"
+    },
+    "DJANGO_DEBUG": {
+      "description": "Django setting: DEBUG",
+      "value": "0"
     },
     "PROXY_URL": {
       "description": "The URL to proxy.",
       "value": "http://some.domain.com/"
     },
     "SECRET_KEY": {
-      "description": "Used for Django's SECRET_KEY setting.",
+      "description": "Django setting: SECRET_KEY",
       "generator": "secret"
     }
   },
