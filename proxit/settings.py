@@ -69,6 +69,11 @@ USE_L10N = False
 
 USE_TZ = True
 
+# https
+
+SECURE_SSL_REDIRECT = bool(int(os.environ.get('SECURE_SSL_REDIRECT', 1)))
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 ## Proxy URL
 # If no PROXY_URL, this will throw an error.
 
