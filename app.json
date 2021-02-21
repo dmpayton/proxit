@@ -9,9 +9,8 @@
       "value": "http://some.domain.com/"
     },
     "SECRET_KEY": {
-      "description": "Used for Django's `SECRET_KEY` setting.",
+      "description": "Used for Django's SECRET_KEY setting.",
       "generator": "secret",
-      "value": ""
     }
   },
   "buildpacks": [{
