@@ -4,6 +4,10 @@
   "repository": "https://github.com/dmpayton/proxit",
   "keywords": [],
   "env": {
+    "DISABLE_COLLECTSTATIC": {
+      "description": "Don't run collectstatic on build.",
+      "value": "1"
+    },
     "PROXY_URL": {
       "description": "The URL to proxy.",
       "value": "http://some.domain.com/"
@@ -11,7 +15,7 @@
     "SECRET_KEY": {
       "description": "Used for Django's SECRET_KEY setting.",
       "generator": "secret"
-    }
+    },
   },
   "buildpacks": [{
     "url": "heroku/python"
