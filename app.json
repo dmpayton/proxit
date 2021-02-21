@@ -10,7 +10,7 @@
     },
     "SECRET_KEY": {
       "description": "Used for Django's SECRET_KEY setting.",
-      "generator": "secret",
+      "generator": "secret"
     }
   },
   "buildpacks": [{
